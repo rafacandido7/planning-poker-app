@@ -6,7 +6,7 @@ import Banner from '../../public/assets/banner.jpg'
 export default function Home() {
   return (
     <div className='bg-primary'>
-        <Navbar />
+      <Navbar />
 
       <div className='flex justify-center items-center py-10'>
         <TextField
