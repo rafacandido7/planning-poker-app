@@ -1,14 +1,14 @@
-import { Typography } from '@mui/material'
-import { useState } from 'react'
+// import { Typography } from '@mui/material'
+// import { useState } from 'react'
 
-export function UsernameConfigInput() {
-  const [name, setName] = useState('')
+// export function UsernameConfigInput() {
+//   const [name, setName] = useState('')
 
-  const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value)
-  }
+//   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setName(e.target.value)
+//   }
 
-  return (
-    <Typography>Hi, there</Typography>
-  )
-}
+//   return (
+//     <Typography>Hi, there</Typography>
+//   )
+// }
