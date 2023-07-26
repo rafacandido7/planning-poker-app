@@ -1,5 +1,6 @@
 import './globals.css'
 import { Metadata } from 'next'
+import { Raleway } from 'next/font/google'
 
 export const metadata: Metadata = {
   applicationName: 'planning-poker-page',
@@ -45,13 +46,20 @@ export const metadata: Metadata = {
   },
 }
 
+const raleway = Raleway({
+  weight: '300',
+  subsets: ['latin']
+})
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang='pt-br'>
+    <html lang='pt-br' className={`
+    ${raleway.className}
+    scroll-smooth`}>
       <body>
         {children}
       </body>
