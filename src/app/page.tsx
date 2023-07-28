@@ -9,11 +9,13 @@ export default function Home() {
   return (
     <div className='bg-gray'>
       <Navbar />
-      <div className='flex justify-center items-center py-5 gap-3'>
+      <div
+        style={{ minHeight: '75vh' }}
+        className='flex justify-around items-center min-h-screen px-4'>
         <Form />
+        <Presentation />
       </div>
-      <Presentation />
       <Footer />
-    </div>
+    </div >
   )
 }
