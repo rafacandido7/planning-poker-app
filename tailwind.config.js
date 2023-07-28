@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         custom: '#23232e',
         primary: '#f3f6f9',
+        prim: '#78C1F3',
+        secondary: '#9BE8D8',
+        terciary: '#E2F6CA',
+        optional: '#F8FDCF',
       }
     },
   },
