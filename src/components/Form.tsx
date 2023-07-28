@@ -4,6 +4,7 @@ import { Button } from '@mui/material'
 import { PlayerNameInput } from '@/components/PlayerNameInput'
 import { CreateOrJoinRoom } from '@/components/CreateOrJoinRoom'
 import { RoomInput } from '@/components/RoomInput'
+import DatabaseService from '@/services/Database.service'
 
 
 export function Form() {
@@ -18,6 +19,10 @@ export function Form() {
       roomName,
       option
     }
+
+    const dbService = new DatabaseService()
+
+    dbService.savePlayerData({ name })
 
     console.log(data)
   }

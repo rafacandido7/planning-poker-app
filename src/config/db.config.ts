@@ -1,4 +1,4 @@
-import firebase from 'firebase/app'
+import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getDatabase } from 'firebase/database'
 
@@ -12,8 +12,8 @@ const firebaseConfig = {
   measurementId: 'G-PRFRMXRLSP'
 }
 
-const app = firebase.initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig)
 
 export const analytics = getAnalytics(app)
 
-export const db = getDatabase()
+export const firebaseDB = getDatabase()
